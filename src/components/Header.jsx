@@ -1,21 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../styles/Header.css";
 
 function Header() {
+   
   return (
-    <nav>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-      </ul>
-    </nav>
+    <div className='header'>
+      <div className='home'>
+        <Link to='/'>Safe-Place</Link>
+      </div>
+      <div className='link'>
+        <div className='link about'>
+          <Link to='/about'>About</Link>
+        </div>
+        <div className='link contact'>
+          <Link to='/contact'>Contact</Link>
+        </div>
+      </div>
+      <div>
+        
+      </div>
+    </div>
   );
 }
 

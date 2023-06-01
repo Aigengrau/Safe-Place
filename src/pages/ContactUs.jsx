@@ -1,43 +1,95 @@
 import React, { useState } from "react";
-
+import Quote from "../components/Quote";
+import "../styles/ContactUs.css";
 const ContactUs = () => {
-  const [status, setStatus] = useState("Отправить");
+  const [values, setValues] = useState({ name: "", email: "", message: "" });
+  const [submitting, setSubmitting] = useState(false);
+  const [errors, setErrors] = useState({});
+
+  const handleChange = (e) => {
+    setValues({ ...values, [e.target.name]: e.target.value });
+  };
+
+  const validate = () => {
+    const newErrors = {};
+
+    if (!values.name) {
+      newErrors.name = "Please enter your name!";
+    }
+
+    if (!values.email) {
+      newErrors.email = "Please enter your email!";
+    } else if (!/\S+@\S+\.\S+/.test(values.email)) {
+      newErrors.email = "Invalid email!";
+    }
+
+    if (!values.message) {
+      newErrors.message = "Please leave a message!";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setStatus("Отправка...");
-    const { name, email, message } = e.target.elements;
-    let details = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
-    };
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(details),
-    });
-    setStatus("Отправить");
-    let result = await response.json();
-    alert(result.status);
+
+    if (!validate()) {
+      return;
+    }
+
+    setSubmitting(true);
+    try {
+      const response = await fetch("http://localhost:5000/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json;charset=utf-8",
+        },
+        body: JSON.stringify(values),
+      });
+      const result = await response.json();
+      alert(result.status);
+      setValues({ name: "", email: "", message: "" });
+    } catch (error) {
+      alert("Something is wrong. Try again later.");
+    }
+    setSubmitting(false);
   };
+
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="name">Имя:</label>
-        <input type="text" id="name" required />
+    <div className='container'>
+      <Quote />
+      <div className='contact'>
+        <form onSubmit={handleSubmit}>
+          <label>Name:</label>
+          <input
+            type='text'
+            name='name'
+            value={values.name}
+            onChange={handleChange}
+          />
+          {errors.name && <p>{errors.name}</p>}
+          <label>Email:</label>
+          <input
+            type='email'
+            name='email'
+            value={values.email}
+            onChange={handleChange}
+          />
+          {errors.email && <p>{errors.email}</p>}
+          <label>Message:</label>
+          <textarea
+            name='message'
+            value={values.message}
+            onChange={handleChange}
+          />
+          {errors.message && <p>{errors.message}</p>}
+          <button type='submit' disabled={submitting}>
+            {submitting ? "Sending..." : "Send"}
+          </button>
+        </form>
       </div>
-      <div>
-        <label htmlFor="email">Email:</label>
-        <input type="email" id="email" required />
-      </div>
-      <div>
-        <label htmlFor="message">Сообщение:</label>
-        <textarea id="message" required />
-      </div>
-      <button type="submit">{status}</button>
-    </form>
+    </div>
   );
 };
 

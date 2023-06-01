@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Mainfont';
+  src: url('../fonts/DMSerifDisplay-Regular.ttf') format('truetype');
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  font-family: Mainfont, serif;
+  height: 10vw;
+  background-color: #E3CAF7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home a {
+  font-size: 4vw;
+  color: #9557B2;
+  text-decoration: none;
+  margin-left: 5vw;
+  order: 1;
+}
+
+.link {
+  order: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vw;
+  width: 30vw;
+}
+
+.link :hover {
+  background-color: #CAAAFF ;
+}
+
+.link a {
+  color: #000;
+  font-size: 2vw;
+}

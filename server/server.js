@@ -33,16 +33,16 @@ router.post("/contact", (req, res) => {
   const mail = {
     from: name,
     to: "ochilovanis@gmail.com",
-    subject: "Форма запроса",
-    html: `<p>Имя: ${name}</p>
+    subject: "Contact Form",
+    html: `<p>Name: ${name}</p>
            <p>Email: ${email}</p>
-           <p>Сообщение: ${message}</p>`,
+           <p>Message: ${message}</p>`,
   };
   contactEmail.sendMail(mail, (error) => {
     if (error) {
-      res.json({ status: "ОШИБКА" });
+      res.json({ status: "ERROR!" });
     } else {
-      res.json({ status: "Сообщение отправлено" });
+      res.json({ status: "Message Send" });
     }
   });
 });

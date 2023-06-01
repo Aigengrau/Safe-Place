@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'AuthorFont';
+  src: url('../fonts/BadScript-Regular.ttf') format('truetype');
+
+}
+
+@font-face {
+  font-family: 'TextFont';
+  src: url('../fonts/Philosopher-Regular.ttf') format('truetype');
+}
+
+.quote {
+  opacity: 1;
+  transition: opacity 1s;
+  height: 20vw;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-text {
+  font-family: TextFont, serif;
+  font-size: 3vw;
+  text-align: center;
+}
+
+.quote-author {
+  font-family: AuthorFont, sans-serif;
+  font-size: 3vw;
+  font-style: italic;
+  margin: 1vw;
+}
+
+.quote-show {
+  opacity: 1;
+}
+
+.quote-hide {
+  opacity: 0;
+}

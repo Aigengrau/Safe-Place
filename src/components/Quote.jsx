@@ -1,14 +1,20 @@
 import React, { useState, useEffect } from "react";
+import "../styles/Quote.css";
 
 function Quote() {
   const [quoteText, setQuoteText] = useState("");
   const [quoteAuthor, setQuoteAuthor] = useState("");
+  const [animationClass, setAnimationClass] = useState("quote-show");
 
   useEffect(() => {
     getQuote();
 
     const interval = setInterval(() => {
-      getQuote();
+      setAnimationClass("quote-hide");
+      setTimeout(() => {
+        getQuote();
+        setAnimationClass("quote-show");
+      }, 1000);
     }, 20000);
 
     return () => clearInterval(interval);
@@ -17,7 +23,7 @@ function Quote() {
   function getQuote() {
     const script = document.createElement("script");
     script.src =
-      "https://api.forismatic.com/api/1.0/?method=getQuote&lang=ru&format=jsonp&jsonp=parseQuote";
+      "https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=parseQuote";
     document.body.appendChild(script);
   }
 
@@ -27,9 +33,9 @@ function Quote() {
   };
 
   return (
-    <div className="quote">
-      <div className="quote-text">{quoteText}</div>
-      <div className="quote-author">{quoteAuthor}</div>
+    <div className={`quote ${animationClass}`}>
+      <div className='quote-text'>{quoteText}</div>
+      <div className='quote-author'>{quoteAuthor}</div>
     </div>
   );
 }
