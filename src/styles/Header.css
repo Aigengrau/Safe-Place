@@ -9,18 +9,19 @@ a {
 
 .header {
   font-family: Mainfont, serif;
-  height: 10vw;
+  height: 100px;
   background-color: #E3CAF7;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .home a {
-  font-size: 4vw;
+  font-size: 47px;
   color: #9557B2;
   text-decoration: none;
-  margin-left: 5vw;
+  margin-left: 50px;
   order: 1;
 }
 
@@ -29,7 +30,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 10vw;
+  height: 100px;
   width: 30vw;
 }
 
@@ -39,5 +40,5 @@ a {
 
 .link a {
   color: #000;
-  font-size: 2vw;
+  font-size: 27px;
 }

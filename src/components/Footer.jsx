@@ -1,33 +1,35 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import "../styles/Footer.css";
+import Insta from "../assets/Insta.svg";
+import Whatsup from "../assets/Whatsup.svg";
 
 function Footer() {
   return (
-    <div className="container">
-      <div className="footer">
-        <div><img src="../assets/Insta.svg" alt="" /></div>
-        <span>@safeplace</span>
+    <div className='footer'>
+      <div className='footer__ref'>
+        <div className='footer__inst'>
+          <img src={Insta} alt='instagram' />
+          <span>@safeplace</span>
+        </div>
+        <div className='footer__whatsup'>
+          <img src={Whatsup} alt='' srcset='' />
+          <span>8-999-99-99</span>
+        </div>
       </div>
-      <div>
-        <div><img src="../assets/Whatsup.svg" alt="" srcset="" /></div>
-        <span>8-999-99-99</span>
+      <div className='footer__links'>
+        <div className='footer__home'>
+          <Link to='/'>HOME</Link>
+        </div>
+        <div className='footer__about'>
+          <Link to='/about'>ABOUT</Link>
+        </div>
+        <div className='footer__contact'>
+          <Link to='/contact'>CONTACT</Link>
+        </div>
       </div>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
-      </nav>
-      <div>Safe Place</div>
+      <div className='name'>Safe Place</div>
     </div>
   );
 }
-export default Footer
+export default Footer;

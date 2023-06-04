@@ -1,0 +1,133 @@
+@font-face {
+  font-family: 'Mainfont';
+  src: url('../fonts/DMSerifDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Textfont';
+  src: url('../fonts/AlegreyaSans-Regular.ttf') format('truetype');
+}
+
+.about__container {
+  height: 800px;
+  background: linear-gradient(to right, #fff, #dda9de);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 300px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 440px;
+  overflow: hidden;
+}
+
+.about__potrait-image {
+  margin: 50px 0 0 50px;
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+}
+
+.about__potrait-image img {
+  width: 200px;
+  height: 400px;
+  border-radius: 60px;
+}
+
+.about__content {
+  margin: 30px 0 0 10px;
+  grid-row: 1 / 1;
+  grid-column: 2 / 2;
+}
+
+.about__text-title {
+  font-family: Mainfont, serif;
+  font-size: 30px;
+  width: 300px;
+}
+
+.about__text-text {
+  font-family: Textfont, sans-serif;
+  font-size: 20px;
+  width: 350px;
+  margin: 35px 50px 0 0;
+}
+
+
+
+.about__bottom-content {
+  margin: 50px 0 0 50px;
+  grid-row: 2 / 2;
+  grid-column: 1 / 2;
+}
+
+.about__bottom-title {
+  font-family: Mainfont, serif;
+  font-size: 30px;
+  width: 500px;
+  margin: 20px;
+}
+
+.about__bottom-text {
+  font-family: Textfont, sans-serif;
+  font-size: 20px;
+  width: 600px;
+}
+
+.about__side-image {
+  height: 800px;
+  width: 50vw;
+  opacity: 50%;
+  border-radius: 250px 0 0 250px;
+  background-image: url(../assets/Pink.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-row: 1 / 2;
+  grid-column: 3 / 3;
+}
+
+.about__content2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+
+}
+
+.about__content2-title {
+  font-family: Mainfont, serif;
+  font-size: 36px;
+  margin-top: 40px;
+}
+
+.about__content2-text {
+  font-family: Textfont, sans-serif;
+  width: 60vw;
+  font-size: 24px;
+  margin: 30px;
+}
+
+.about__content3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  background-color: #CAAAFF;
+}
+
+.about__content3-title {
+  font-family: Mainfont, serif;
+  font-size: 36px;
+  margin: 30px;
+}
+
+.about__content3-text {
+  font-family: Textfont, sans-serif;
+  width: 60vw;
+  font-size: 24px;
+}
+
+.about__content3-text ul {
+  font-size: 20px;
+  list-style-position: inside;
+  padding: 10px 0  40px 20px ;
+}

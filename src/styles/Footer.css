@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Mainfont';
+  src: url('../fonts/DMSerifDisplay-Regular.ttf') format('truetype');
+}
+
+.footer {
+  display: flex;
+  background: linear-gradient(to right, #49366D, #7E76CE);
+  height: 10vw;
+  font-size: 30px;
+}
+
+.footer__ref {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.footer__ref span {
+  color: #fff;
+}
+
+.footer__inst,
+.footer__whatsup {
+  display: flex;
+  align-items: center;
+  margin-left: 5vw;
+}
+
+.footer__links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1;
+  font-family: Mainfont, serif;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer img {
+  height: 2.5vw;
+  width: 2.5vw;
+  padding: 1vw;
+}
+
+.name {
+  color: #49366D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 6vw;
+}

@@ -1,0 +1,168 @@
+@font-face {
+  font-family: 'Mainfont';
+  src: url('../fonts/DMSerifDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Textfont';
+  src: url('../fonts/AlegreyaSans-Regular.ttf') format('truetype');
+}
+
+
+.home__title {
+  background-image: url("../assets/Field.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  color: #fff;
+  font-size: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Mainfont, serif;
+}
+
+.home__postitle {
+  background-color: #DEDDF8;
+  height: 80px;
+  font-size: 29px;
+  font-family: Mainfont, serif;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.home__postitle span {
+  color: #9557B2;
+  margin: 4px;
+}
+
+.home__content1 {
+  background-color: #E3CAF7;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.content__title {
+  font-family: Mainfont, serif;
+  font-size: 44px;
+  margin: 50px;
+}
+
+.content__title span {
+  color: #9557B2;
+}
+
+.content__text {
+  font-family: Textfont, sans-serif;
+  font-size: 24px;
+  width: 800px;
+  text-align: justify;
+}
+
+.content__picture {
+  height: 300px;
+  width: 60vw;
+  margin-left: 35px;
+  background-image: url(../assets/Lavander.jpg);
+  background-size:cover ;
+  border-radius: 150px 0 0 150px;
+}
+
+
+
+.home__content2 {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  overflow: hidden;
+}
+
+.content1 {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  margin-bottom: 30px;
+}
+
+.content__title1 {
+  font-family: Mainfont, serif;
+  font-size: 28px;
+  padding: 5vw 0 5vw 0;
+  width: 30vw;
+  text-align: center;
+}
+
+.content__title1 span {
+  color: #9557B2;
+}
+
+.content__text1 {
+  width: 25vw;
+  font-size: 20px;
+  margin: auto;
+  padding: 15px;
+  font-family: Textfont, sans-serif;
+  text-align: justify;
+}
+
+.home__content3 {
+  height: auto;
+  background-color: #E3CAF7;
+}
+
+.content3__title {
+  color: #9557B2;
+  font-size: 30px;
+  padding-top: 30px;
+  font-family: Mainfont, serif;
+  text-align: center;
+}
+
+.content3__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  font-size: 20px;
+  font-family: Textfont, sans-serif;
+}
+
+.content3__text1,
+.content3__text2 {
+  width: 400px;
+  margin: 50px;
+}
+
+.home__girl {
+  background-image: url(../assets/FieldGirl.jpg);
+  background-size: cover;
+  height: 40vw;
+}
+
+.text__container {
+  position: relative;
+}
+
+.link__text {
+  border: 5px solid #fff;
+  height: 18vw;
+  width: 25vw;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10vw;
+  left: 10vw;
+}
+
+.link__text a {
+  font-size: 7vw;
+  line-height: 6vw;
+  font-family: Mainfont, serif;
+  text-align: center;
+  color: #fff;
+
+}

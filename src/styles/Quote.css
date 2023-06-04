@@ -12,7 +12,7 @@
 .quote {
   opacity: 1;
   transition: opacity 1s;
-  height: 20vw;
+  height: 250px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -22,15 +22,15 @@
 
 .quote-text {
   font-family: TextFont, serif;
-  font-size: 3vw;
+  font-size: 30px;
   text-align: center;
 }
 
 .quote-author {
   font-family: AuthorFont, sans-serif;
-  font-size: 3vw;
+  font-size: 30px;
   font-style: italic;
-  margin: 1vw;
+  margin: 10px;
 }
 
 .quote-show {
