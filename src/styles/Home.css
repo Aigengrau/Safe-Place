@@ -66,7 +66,7 @@
   width: 60vw;
   margin-left: 35px;
   background-image: url(../assets/Lavander.jpg);
-  background-size:cover ;
+  background-size: cover;
   border-radius: 150px 0 0 150px;
 }
 
@@ -82,7 +82,7 @@
 .content1 {
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
   margin-bottom: 30px;
 }
 
@@ -164,5 +164,5 @@
   font-family: Mainfont, serif;
   text-align: center;
   color: #fff;
-
 }
+

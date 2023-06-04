@@ -1,5 +1,6 @@
 import React from "react";
 import Quote from "../components/Quote";
+import { Link } from "react-router-dom";
 import "../styles/About.css";
 import Girl from "../assets/Girl.jpg";
 
@@ -94,10 +95,19 @@ function About() {
           </ul>
         </div>
       </div>
-      <div className='about__content4'>
-        
-      </div>
       <Quote />
+      <div className='about__content4'>
+        <div className='about__content4-container'>
+          <div className='about__content4-text'>
+            When you’re ready to get started, I’m here to help.
+          </div>
+          <div className='about__link'>
+            <Link to='/contact'>
+              <button className='about__button'>Contact me</button>
+            </Link>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
