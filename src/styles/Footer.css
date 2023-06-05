@@ -8,6 +8,7 @@
   background: linear-gradient(to right, #49366D, #7E76CE);
   height: 10vw;
   font-size: 30px;
+  overflow: hidden;
 }
 
 .footer__ref {

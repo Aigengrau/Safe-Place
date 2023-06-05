@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'Mainfont';
+  src: url('../fonts/DMSerifDisplay-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Textfont';
+  src: url('../fonts/AlegreyaSans-Regular.ttf') format('truetype');
+}
+
+.contact__page {
+  background-image: url(../assets/Background.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+.contact__container {
+  display: flex;
+  align-items: center;
+}
+
+.contact__content-title {
+  color: #fff;
+  width: 500px;
+  font-family: Mainfont, serif;
+  font-size: 76px;
+  text-align: center;
+  margin: 50px;
+}
+
+.contact__content-text {
+  color: #fff;
+  width: 500px;
+  font-family: Textfont, sans-serif;
+  font-size: 34px;
+  margin: 50px;
+  text-align: center;
+}
+
+.contact__form {
+  height: 650px;
+  width: 500px;
+  background-color: #EBD3FF;
+  opacity: 80%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 100px;
+  flex: 2;
+}
+
+.contact__form form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.contact__form label {
+  padding: 30px;
+  font-family: Mainfont, serif;
+  font-size: 20px;
+}
+
+.form-name {
+  width: 300px;
+  height: 50px;
+}
+
+.form-email {
+  width: 300px;
+  height: 50px;
+}
+
+.form-text {
+  width: 300px;
+  height: 100px;
+
+}
+
+.form-button {
+  margin: 30px;
+  height: 40px;
+  width: 120px;
+  background-color: #8F65A3;
+  color: #fff;
+  font-family: Mainfont, serif;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact__map {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#map {
+
+  height: 300px;
+  width: 600px;
+  margin: 50px;
+  align-items: center;
+}

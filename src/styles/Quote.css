@@ -10,6 +10,7 @@
 }
 
 .quote {
+  background-color: #fff;
   opacity: 1;
   transition: opacity 1s;
   height: 250px;
