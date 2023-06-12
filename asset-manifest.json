@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Safe-Place/static/css/main.f387ea4b.css",
+    "main.js": "/Safe-Place/static/js/main.7349d84c.js",
+    "static/media/FieldGirl.jpg": "/Safe-Place/static/media/FieldGirl.4d827f482037acc63413.jpg",
+    "static/media/Background.jpg": "/Safe-Place/static/media/Background.a577ebcf96ef0cdba8ed.jpg",
+    "static/media/Pink.jpg": "/Safe-Place/static/media/Pink.22c81b4371fe0ce94d94.jpg",
+    "static/media/BlueGirl.jpg": "/Safe-Place/static/media/BlueGirl.07c73d1dcdf2459423c2.jpg",
+    "static/media/Field.jpg": "/Safe-Place/static/media/Field.c729bd989222c504eccb.jpg",
+    "static/media/Lavander.jpg": "/Safe-Place/static/media/Lavander.02f7872700fcbcb0d4b5.jpg",
+    "static/media/AlegreyaSans-Regular.ttf": "/Safe-Place/static/media/AlegreyaSans-Regular.d8e7c7d7a9372b1b5570.ttf",
+    "static/media/Philosopher-Regular.ttf": "/Safe-Place/static/media/Philosopher-Regular.bb5f8e861d4da00f721e.ttf",
+    "static/media/Girl.jpg": "/Safe-Place/static/media/Girl.a7dda5bac15f8cd7e879.jpg",
+    "static/media/DMSerifDisplay-Regular.ttf": "/Safe-Place/static/media/DMSerifDisplay-Regular.ef3c642c5fd9ae15682f.ttf",
+    "static/media/BadScript-Regular.ttf": "/Safe-Place/static/media/BadScript-Regular.7b0d1257d1727d1b353a.ttf",
+    "static/media/Insta.svg": "/Safe-Place/static/media/Insta.610c93763634d1fab54caa2de771ac8c.svg",
+    "static/media/Whatsup.svg": "/Safe-Place/static/media/Whatsup.3cb88a4d2603e5c1e8abfd5d4deb07be.svg",
+    "index.html": "/Safe-Place/index.html",
+    "main.f387ea4b.css.map": "/Safe-Place/static/css/main.f387ea4b.css.map",
+    "main.7349d84c.js.map": "/Safe-Place/static/js/main.7349d84c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f387ea4b.css",
+    "static/js/main.7349d84c.js"
+  ]
+}
