@@ -8,6 +8,79 @@
   src: url('../fonts/AlegreyaSans-Regular.ttf') format('truetype');
 }
 
+@media screen and (max-width:720px) {
+  .home__container .home__title {
+    font-size: 11vw;
+    height: 150px;
+  }
+
+  .home__container .home__postitle {
+    font-size: 14px;
+    height: 50px;
+  }
+
+  .home__container .home__content1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home__content1 .content__title {
+    font-size: 20px;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .home__content1 .content__text {
+    font-size: 16px;
+    width: 90vw;
+    margin: 10px;
+    text-align: justify;
+  }
+
+  .home__content1 .content__picture {
+    height: 50vw;
+    width: 100vw;
+    margin: 0;
+    border-radius: 0%;
+  }
+
+  .home__container .home__content2 {
+    display: block;
+  }
+
+  .content1 .content__title1 {
+    width: auto;
+    font-size: 24px;
+  }
+
+  .content1 .content__text1 {
+    width: auto;
+    font-size: 20px;
+    text-align: justify;
+  }
+
+  .home__content3 .content3__title {
+    font-size: 24px;
+  }
+
+  .home__content3 .content3__text {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content3__text .content3__text1 {
+    width: auto;
+    margin: 20px;
+    text-align: justify;
+  }
+
+  .content3__text .content3__text2 {
+    width: auto;
+    margin: 20px;
+    text-align: justify;
+  }
+}
 
 .home__title {
   background-image: url("../assets/Field.jpg");
@@ -165,4 +238,3 @@
   text-align: center;
   color: #fff;
 }
-

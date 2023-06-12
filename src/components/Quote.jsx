@@ -33,9 +33,11 @@ function Quote() {
   };
 
   return (
-    <div className={`quote ${animationClass}`}>
-      <div className='quote-text'>{quoteText}</div>
-      <div className='quote-author'>{quoteAuthor}</div>
+    <div className='quote-container'>
+      <div className={`quote ${animationClass}`}>
+        <div className='quote-text'>{quoteText}</div>
+        <div className='quote-author'>{quoteAuthor}</div>
+      </div>
     </div>
   );
 }

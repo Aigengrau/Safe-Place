@@ -9,6 +9,20 @@
   src: url('../fonts/Philosopher-Regular.ttf') format('truetype');
 }
 
+@media screen and (max-width:520px) {
+  .quote-container .quote {
+    height: 150px;
+  }
+
+  .quote .quote-text {
+    font-size: 18px;
+  }
+
+  .quote .quote-author {
+    font-size: 18px;
+  }
+}
+
 .quote {
   background-color: #fff;
   opacity: 1;

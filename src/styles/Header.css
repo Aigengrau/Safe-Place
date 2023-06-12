@@ -3,6 +3,22 @@
   src: url('../fonts/DMSerifDisplay-Regular.ttf') format('truetype');
 }
 
+@media screen and (max-width: 720px) {
+  .header .home a {
+    font-size: 32px;
+    margin-left: 10px;
+  }
+
+  .header .link {
+    width: 150px;
+  }
+
+  .header .link a {
+    font-size: 18px;
+
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -35,7 +51,7 @@ a {
 }
 
 .link :hover {
-  background-color: #CAAAFF ;
+  background-color: #CAAAFF;
 }
 
 .link a {

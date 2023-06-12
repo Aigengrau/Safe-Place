@@ -8,6 +8,59 @@
   src: url('../fonts/AlegreyaSans-Regular.ttf') format('truetype');
 }
 
+@media screen and (max-width:1070px) {
+  .contact__page .contact__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact__content .contact__content-title {
+    font-size: 36px;
+    width: auto;
+  }
+
+  .contact__content .contact__content-text {
+    font-size: 24px;
+    width: auto;
+  }
+
+  .contact__container .contact__form {
+    width: 80vw;
+    margin: 10px;
+  }
+   
+  .contact__container .contact__form form{
+    padding: 20px;
+  }
+  .contact__container .contact__form label{
+    padding: 5px;
+  }
+
+  .contact__container .contact__form label {
+    font-size: 14px;
+  }
+
+  .contact__form .form-name {
+    width: 60vw;
+    height: 35px;
+  }
+  .contact__form .form-email {
+    width: 60vw;
+    height: 35px;
+  }
+  .contact__form .form-text {
+    width: 60vw;
+    height: 50px;
+  }
+  .contact__form .form-button {
+    width: 100px;
+    font-size: 14px;
+  }
+  .contact__page #map{
+    width: 80vw;
+  }
+}
+
 .contact__page {
   background-image: url(../assets/Background.jpg);
   background-size: cover;

@@ -6,7 +6,7 @@ import Girl from "../assets/Girl.jpg";
 
 function About() {
   return (
-    <div>
+    <div className="about">
       <div className='about__container'>
         <div className='about__potrait-image'>
           <img src={Girl} alt='portrait' />

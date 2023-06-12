@@ -8,6 +8,116 @@
   src: url('../fonts/AlegreyaSans-Regular.ttf') format('truetype');
 }
 
+@media screen and (max-width:750px) {
+  .about .about__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+
+  .about__container .about__potrait-image {
+    margin: 20px;
+  }
+
+  .about__container .about__potrait-image img {
+    height: 300px;
+    width: 150px;
+  }
+
+  .about__container .about__text-title {
+    font-size: 24px;
+    width: auto;
+    text-align: center;
+  }
+
+  .about__container .about__text-text {
+    font-size: 18px;
+    width: auto;
+    text-align: justify;
+    margin: 20px;
+  }
+
+  .about__container .about__bottom-content {
+    margin: 0;
+  }
+
+  .about__bottom-content .about__bottom-title {
+    font-size: 24px;
+    width: auto;
+    text-align: center;
+    margin: 20px;
+  }
+
+  .about__bottom-content .about__bottom-text {
+    font-size: 18px;
+    width: auto;
+    text-align: justify;
+    margin: 20px;
+  }
+
+  .about__container .about__side-image {
+    width: 100vw;
+    height: 150px;
+    border-radius: 0;
+  }
+
+  .about__content2 .about__content2-title {
+    font-size: 24px;
+  }
+
+  .about__content2 .about__content2-text {
+    font-size: 18px;
+    width: auto;
+    text-align: justify;
+    margin: 20px;
+  }
+
+  .about__content3 .about__content3-title {
+    font-size: 24px;
+  }
+
+  .about__content3 .about__content3-text {
+    font-size: 18px;
+    width: auto;
+    text-align: justify;
+    margin: 20px;
+  }
+
+  .about__content3 .about__content3-text ul {
+    font-size: 18px;
+    width: auto;
+    text-align: justify;
+    margin: 20px;
+  }
+
+  .about .about__content4 {
+    height: auto;
+  }
+
+  .about__content4 .about__content4-container {
+    width: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about__content4-container .about__content4-text {
+    font-size: 24px;
+    width: auto;
+  }
+
+  .about__link .about__button {
+    margin: 50px;
+    height: 50px;
+    width: 150px;
+    font-size: 18px;
+  }
+}
+
 .about__container {
   height: 800px;
   background: linear-gradient(to right, #fff, #dda9de);
@@ -143,10 +253,10 @@
   padding: 100px;
 }
 
-.about__content4-text{
+.about__content4-text {
   width: 500px;
   font-size: 48px;
-  font-family: Textfont,sans-serif;
+  font-family: Textfont, sans-serif;
   color: #fff;
   text-align: center;
 }
