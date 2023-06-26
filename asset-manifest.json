@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Safe-Place/static/css/main.f387ea4b.css",
-    "main.js": "/Safe-Place/static/js/main.7349d84c.js",
+    "main.js": "/Safe-Place/static/js/main.220d710a.js",
     "static/media/FieldGirl.jpg": "/Safe-Place/static/media/FieldGirl.4d827f482037acc63413.jpg",
     "static/media/Background.jpg": "/Safe-Place/static/media/Background.a577ebcf96ef0cdba8ed.jpg",
     "static/media/Pink.jpg": "/Safe-Place/static/media/Pink.22c81b4371fe0ce94d94.jpg",
@@ -17,10 +17,10 @@
     "static/media/Whatsup.svg": "/Safe-Place/static/media/Whatsup.3cb88a4d2603e5c1e8abfd5d4deb07be.svg",
     "index.html": "/Safe-Place/index.html",
     "main.f387ea4b.css.map": "/Safe-Place/static/css/main.f387ea4b.css.map",
-    "main.7349d84c.js.map": "/Safe-Place/static/js/main.7349d84c.js.map"
+    "main.220d710a.js.map": "/Safe-Place/static/js/main.220d710a.js.map"
   },
   "entrypoints": [
     "static/css/main.f387ea4b.css",
-    "static/js/main.7349d84c.js"
+    "static/js/main.220d710a.js"
   ]
 }
