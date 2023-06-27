@@ -1,4 +1,3 @@
-When you viewing the page press title Safe-place to see home page.
 
 ![Screenshot 2023-06-12 142101](https://github.com/Aigengrau/Safe-Place/assets/65302777/d5bdc31e-9b26-465c-967f-24f4915470eb)
 
